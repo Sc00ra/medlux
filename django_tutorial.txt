@@ -1,0 +1,28 @@
+Superadmin
+	Login: admin
+	Hasło: admin
+
+zawsze whodzimy do sciezki /medlux_project
+zeby zmienic w cmd dysk na inny niz C to:
+> cd /d D:(sciezka) 
+
+
+zeby uruchomic server
+>python manage.py runserver
+Link do strony
+http://127.0.0.1:8000/pracownicy/
+
+Link do strony superadmina
+http://127.0.0.1:8000/admin/
+
+
+Gdzie baza danych 
+/medlux_project/pracownicy/models.py
+
+Jak cos sie zmieni w bazie danych to potem w cmd
+>python manage.py makemigrations nazwabazy
+>python manage.py sqlmigrate nazwabazy nrmigracji
+>python manage.py migrate
+i sprawdzic np w datagripie czy przeszlo 
+
+
