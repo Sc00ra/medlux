@@ -1,23 +1,92 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="pl" dir="ltr">
 <head>
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="stylesheet" href="styl.css">
-<meta charset="utf-8">
-<title><h1> MedLux Ośrodek I</h1> </title>
+    <link rel="shortcut icon" href="favicon2.ico">
+    <link rel="stylesheet" href="styl.css">
+    <meta charset="utf-8">
+    <title>MedLux Ośrodek I</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        h1 img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px; 
+            border-radius: 50%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #66c2a5; 
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s, transform 0.3s, font-size 0.3s;
+            border-radius: 10px;
+        }
+
+        nav a:hover {
+            background-color: #4d8c7d; 
+            transform: scale(1.2); 
+            font-size: 16px; 
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figure img {
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+        }
+
+        h3 {
+            text-align: center;
+            font-style: italic;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid #66c2a5;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-<h1> Poziome menu</h1>
-<nav>
-<a href="S1.html"> Sala Konferencyjna </a>
-<a href="S2.html"> Sala Zabiegowa I </a>
-<a href="S3.html"> Sala Zabiegowa II </a>
-<a href="S4.html"> Sala Przyjęć I </a>
-</nav>
-<figure>
-<img src="medic.png" width="300" height="450">
-</figure>
-<h3> TEST</h3>
+    <h1>
+        <img src="medic.png" alt="Medic" width="150" height="150">
+        MedLux Ośrodek I
+    </h1>
 
+    <nav>
+		<a href="sale.html">Wszystkie sale</a>
+        <a href="S1.html">Sala Konferencyjna</a>
+        <a href="S2.html">Sala Zabiegowa I</a>
+        <a href="S3.html">Sala Zabiegowa II</a>
+        <a href="S4.html">Sala Przyjęć I</a>
+    </nav>
 
+    <h3>
+        Witaj w Harmonogramie Ośrodka numer I! Wybierz interesującą cię salę i ciesz się dostępem do jej kalendarza!
+		Jeśli masz uprawnienia, możesz edytować wydarzenia.    </h3>
+</body>
 </html>
