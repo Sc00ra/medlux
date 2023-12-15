@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path("pracownicy/", include("pracownicy.urls")),
+    path("pracownicy/", include("pracownicy.urls")), # url do bazy pracownikow
     path('admin/', admin.site.urls),
+    path("accounts/", include("django.contrib.auth.urls"))  #url do logowania
 ]
