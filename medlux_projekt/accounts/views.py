@@ -15,19 +15,19 @@ def login_view(request):
             if lista_grup == 'admin':
                 return redirect('/admin')
             elif lista_grup == 'CEO':  
-                return redirect('CEO')  
+                return redirect('CEO/')  
             elif lista_grup == 'Dyrektor':  
-                return redirect('Dyrektor')  
+                return redirect('Dyrektor/')  
             elif lista_grup == 'HR':  
-                return redirect('HR')  
+                return redirect('HR/')  
             elif lista_grup == 'Ksiegowa':  
-                return redirect('Ksiegowa')  
+                return redirect('Ksiegowa/')  
             elif lista_grup == 'Pracownik':  
-                return redirect('Pracownik')  
+                return redirect('Pracownik/')  
             elif lista_grup == 'Recepcja':  
-                return redirect('Recepcja')
+                return redirect('Recepcja/')
             elif lista_grup == 'Zaopatrzenie':  
-                return redirect('Zaopatrzenie')    
+                return redirect('Zaopatrzenie/')    
 
     return render(request, 'login.html')
 
