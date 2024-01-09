@@ -1,3 +1,4 @@
+
 Superadmin
 	Login: admin
 	Hasło: admin
@@ -25,4 +26,6 @@ Jak cos sie zmieni w bazie danych to potem w cmd
 >python manage.py migrate
 i sprawdzic np w datagripie czy przeszlo 
 
+path("pracownicy/", include("pracownicy.urls")), # url do bazy pracownikow
 
+'pracownicy.apps.PracownicyConfig',

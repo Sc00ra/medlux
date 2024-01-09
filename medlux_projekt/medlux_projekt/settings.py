@@ -31,13 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "pracownicy",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pracownicy.apps.PracownicyConfig',
     'accounts.apps.AccountsConfig',
 ]
 
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'medlux_projekt.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pracownicy_medlux',
+        'NAME': 'medlux',
         "USER": "postgres",
         "PASSWORD": "Matylda1",
         "HOST": "localhost",

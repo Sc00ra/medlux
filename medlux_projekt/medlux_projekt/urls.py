@@ -18,11 +18,11 @@ from django.contrib import admin
 from django.urls import include, path
 from accounts.views import *
 urlpatterns = [
-    path("pracownicy/", include("pracownicy.urls")), # url do bazy pracownikow
+   
     path('admin/', admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),  #url do logowania
     path('login/', login_view, name='login'),
-    path('http://127.0.0.1:8000/login/Dyrektor', dyr_view, name='dyrektor'),
+    path('login/Dyrektor/', dyr_view, name='dyrektor'),
     path('login/CEO/', CEO_view, name='CEO'),
     path('login/HR/', HR_view, name='HR'),
     path('login/Ksiegowa/', Ksiegowa_view, name='Ksiegowa'),

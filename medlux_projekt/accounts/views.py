@@ -33,7 +33,7 @@ def login_view(request):
 
 
 def dyr_view(request):
-    return render(request, 'Dyrektor.html')
+    return render(request, 'dyrektor.html')
 def CEO_view(request):
     return render(request, 'CEO.html')
 def HR_view(request):
