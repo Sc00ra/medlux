@@ -7,8 +7,8 @@
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    
-    
+
+
 
 }
 #data_czas {
@@ -22,8 +22,8 @@
     margin-left: 13px;
     margin-right: 5px;
     border-radius: 15px;
-    
-    
+
+
 }
 #powitanie {
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -36,9 +36,9 @@
     margin-left: 13px;
     margin-right: 13px;
     border-radius: 15px;
-    
-    
-    
+
+
+
 }
 
 #opcje {
@@ -54,12 +54,12 @@
     border-radius: 15px;
     display: list-item;
     list-style: none;
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
 }
 
 
@@ -73,8 +73,8 @@
     position: fixed;
     border-radius: 13px;
     text-decoration: none;
-    
-    
+
+
 }
 
 #opcje a:nth-child(1) {
@@ -109,16 +109,15 @@ footer {
     bottom: 0px;
     position: fixed;
     width: 97%;
-    
+
 }
 
 input[type=submit] {
     background-color:yellow;
-    
+
 }
 
 input[type=reset] {
     background-color:crimson;
     margin-right: 30px;
 }
-
