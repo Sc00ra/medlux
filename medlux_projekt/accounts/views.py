@@ -37,12 +37,12 @@ def dyr_view(request):
 def CEO_view(request):
     return render(request, 'CEO.html')
 def HR_view(request):
-    return render(request, 'HR.html')
+    return render(request, 'hr.html')
 def Ksiegowa_view(request):
     return render(request, 'Ksiegowa.html')
 def Pracownik_view(request):
-    return render(request, 'Pracownik.html')
+    return render(request, 'pracownik_os.html')
 def Recepcja_view(request):
-    return render(request, 'Recepcja.html')
+    return render(request, 'recepsja_os1.html')
 def Zaopatrzenie_view(request):
     return render(request, 'Zaopatrzenie.html')

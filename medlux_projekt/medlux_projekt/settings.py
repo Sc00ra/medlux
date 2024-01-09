@@ -82,9 +82,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'medlux',
         "USER": "postgres",
-        "PASSWORD": "postgres",
+        "PASSWORD": "Matylda1",
         "HOST": "localhost",
-        "PORT": "5433",
+        "PORT": "5432",
     }
 }
 
