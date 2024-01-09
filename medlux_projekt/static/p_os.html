@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'dyrektor_css.css' %}">
+    <script src="{% static 'dyrektor_js.js' %}" defer></script>
+    <title>Panel Pracowników</title>
+</head>
+<body>
+    <div class="header">
+        <div class="left-section">
+            <p>MedLux - Ośrodek I</p>
+        </div>
+        <div class="center-section">
+            <p>Witaj w panelu pracowników</p>
+        </div>
+        <div class="right-section">
+            <p id="datetime"></p>
+        </div>
+    </div>
+
+    <div class="tiles-container">
+        <a href="harmonogram_sal.html" class="tile" id="tile2">
+            <p>Harmonogram sal</p>
+        </a>
+      </div>
+
+    <footer>
+        <p>Medlux</p>
+    </footer>
+</body>
+</html>
