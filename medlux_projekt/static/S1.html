@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+    <link rel="stylesheet" href="{% static 'sale_css.css' %}">
+    <meta charset="utf-8">
+    <title>MedLux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        h1 img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px; 
+            border-radius: 50%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #66c2a5; 
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s, transform 0.3s, font-size 0.3s;
+            border-radius: 10px;
+        }
+
+        nav a:hover {
+            background-color: #4d8c7d; 
+            transform: scale(1.2); 
+            font-size: 16px; 
+        }
+
+        #calendar-container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #calendar-name {
+            font-size: 24px; /* Zwiększ rozmiar tekstu */
+            font-weight: bold; /* Pogrubienie tekstu */
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #66c2a5; /* Dodaj obramowanie w kolorze tła menu */
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="medic.png" alt="Medic" width="150" height="150">
+        MedLux
+    </h1>
+
+    <nav>
+			<a href="sale.html">Wszystkie sale</a>
+        <a href="S1.html">Sala Konferencyjna</a>
+        <a href="S2.html">Sala Zabiegowa I</a>
+        <a href="S3.html">Sala Zabiegowa II</a>
+        <a href="S4.html">Sala Przyjęć I</a>
+    </nav>
+
+    <div id="calendar-container">
+        <div id="calendar-name">Sala Konferencyjna</div>
+        <iframe src="https://calendar.google.com/calendar/embed?src=aa73d2d4e3da287858bf911ba49dda43a0477e557c21004ddf521fe4a0a5ba0a%40group.calendar.google.com&ctz=Europe%2FWarsaw" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+</body>
+</html>

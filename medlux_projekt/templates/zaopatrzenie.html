@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Panel dla zaopatrzenia</title>
+        <link rel="stylesheet" type="text/css" href="./zaopatrzenie.css">
+    </head>
+    <body>
+        <div id="menu">
+            <div id="data_czas"></div>
+            <div id="powitanie">Witaj w panelu zaopatrzenia</div>
+            <ul id="opcje" onmouseenter="options()" onmouseleave="options_()">Co chcesz zrobic
+                <!--
+                <div id="Zamowienie">Zlozyc zamowienie</div>
+                <div id="Historia_zamowien">Przejrzec historie dotyczasowych zamowien</div>
+                <div id="Baza_zamowien">Zobaczyc baze zamowien</div>
+                -->
+            </ul>
+            
+            
+        </div>
+        <footer>Medlux</footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                updateTime();
+                setInterval(updateTime, 1000);
+            });
+            function updateTime() {
+                const date_time = document.getElementById("data_czas");
+                const time_nast = new Date();
+                const opcje = {weekday: "long", day: "numeric", month: "long", year: "numeric", hour: "numeric", minute: "numeric", second: "numeric"};
+                const format_time = time_nast.toLocaleString("pl-PL", opcje);
+                date_time.innerHTML = format_time;
+            };
+
+            function options() {
+                const opc = document.getElementById("opcje");
+                const op_1 = document.createElement("a");
+                const op_2 = document.createElement("a");
+                const op_3 = document.createElement("a");
+                const id_op = document.createAttribute("id");
+                const id_op_2 = document.createAttribute("id");
+                const id_op_3 = document.createAttribute("id");
+                const sty_op = document.createAttribute("style");
+                const sty_op_2 = document.createAttribute("style");
+                const sty_op_3 = document.createAttribute("style");
+                const href = document.createAttribute("href");
+                //const on_click = document.createAttribute("formaction");
+                //const type = document.createAttribute("type");
+                sty_op.value = "display: block";
+                sty_op_2.value = "display: block";
+                sty_op_3.value = "display: block";
+                id_op.value = "Zamowienie";
+                id_op_2.value = "Historia_zamowien";
+                id_op_3.value = "Baza_zamowien";
+                href.value = "./form_zamowienia.html";
+                //on_click.value = "./form_zamowienia.html";
+                //type.value = "submit";
+                op_1.setAttributeNode(id_op);
+                op_1.setAttributeNode(sty_op);
+                op_2.setAttributeNode(id_op_2);
+                op_2.setAttributeNode(sty_op_2);
+                op_3.setAttributeNode(id_op_3);
+                op_3.setAttributeNode(sty_op_3);
+                op_1.setAttributeNode(href);
+                //op_1.setAttributeNode(on_click);
+                //op_1.setAttributeNode(type);
+                op_1.textContent = "Zlozyc zamowienie";
+                op_2.textContent = "Przejrzec historie dotyczasowych zamowien";
+                op_3.textContent = "Zobaczyc baze zamowien";
+                opc.appendChild(op_1);
+                opc.appendChild(op_2);
+                opc.appendChild(op_3);
+            }
+            function options_() {
+                const opc = document.getElementById("opcje");
+                const op_1 = document.getElementById("Zamowienie");
+                const op_2 = document.getElementById("Historia_zamowien");;
+                const op_3 = document.getElementById("Baza_zamowien");
+                opc.removeChild(op_1);
+                opc.removeChild(op_2);
+                opc.removeChild(op_3);
+            }
+
+             
+
+
+
+        </script>
+    </body>
+</html>

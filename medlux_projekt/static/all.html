@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+    <link rel="shortcut icon" href="favicon2.ico">
+    <link rel="stylesheet" href="styl.css">
+    <meta charset="utf-8">
+    <title>MedLux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        h1 img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #66c2a5;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s, transform 0.3s, font-size 0.3s;
+            border-radius: 10px;
+        }
+
+        nav a:hover {
+            background-color: #4d8c7d;
+            transform: scale(1.2);
+            font-size: 16px;
+        }
+
+        #calendar-container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #calendar-name {
+            font-size: 24px; /* Zwiększ rozmiar tekstu */
+            font-weight: bold; /* Pogrubienie tekstu */
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #66c2a5; /* Dodaj obramowanie w kolorze tła menu */
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        <img src="medic.png" alt="Medic" width="150" height="150">
+        MedLux
+    </h1>
+
+    <nav>
+			<a href="all.html">Wszyscy pracownicy</a>
+        <a href="recepcja_pr.html">Recepcja</a>
+        <a href="pracownik1.html">Pracownik 1</a>
+        <a href="pracownik2.html">Pracownik 2</a>
+        <a href="hr_pr.html">Human Resources</a>
+    </nav>
+
+    <div id="calendar-container">
+        <div id="calendar-name">Wszyscy pracownicy</div>
+<iframe src="https://calendar.google.com/calendar/embed?src=recepcja765%40gmail.com&ctz=Europe%2FWarsaw" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+</body>
+</html>
+

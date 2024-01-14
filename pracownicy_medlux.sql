@@ -14,7 +14,7 @@ VALUES
 ('Agnieszka', 'Adamska', '98765432107', 'Sprzątaczka'),
 ('Jakub', 'Nowakowski', '98765432108', 'Ochroniarz'),
 ('Marta', 'Kwiatkowska', '98765432109', 'Księgowy');
-
+DELETE FROM pracownicy_pracownik;
 INSERT INTO zaopatrzenie_zaopatrzenie (nazwa, ilosc, data_ostatniej_kontroli, miejsce_skladowania, wartosc_netto, wartosc_brutto, cena_za_szt, opis_slowny)
 VALUES
   ('strzykawka', 100, '2023-01-01', 'Magazyn A', 5.99, 7.99, 0.50, 'Przydatna w medycynie.'),

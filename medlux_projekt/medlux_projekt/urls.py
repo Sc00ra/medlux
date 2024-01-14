@@ -29,4 +29,5 @@ urlpatterns = [
     path('login/Pracownik/', Pracownik_view, name='Pracownik'),
     path('login/Recepcja/', Recepcja_view, name='Recepcja'),
     path('login/Zaopatrzenie/', Zaopatrzenie_view, name='Zaopatrzenie'),
+    path('Dyrektor/Harmonogram_sal/', Harmonogram_sal_dyr_view, name='Harmonogram_sal')
 ]

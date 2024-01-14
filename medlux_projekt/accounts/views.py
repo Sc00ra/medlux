@@ -17,7 +17,7 @@ def login_view(request):
             elif lista_grup == 'CEO':  
                 return redirect('CEO')  
             elif lista_grup == 'Dyrektor':  
-                return redirect('login/Dyrektor')  
+                return redirect('Dyrektor/')  
             elif lista_grup == 'HR':  
                 return redirect('HR/')  
             elif lista_grup == 'Ksiegowa':  
@@ -35,7 +35,7 @@ def login_view(request):
 def dyr_view(request):
     return render(request, 'dyrektor.html')
 def CEO_view(request):
-    return render(request, 'CEO.html')
+    return render(request, 'ceo.html')
 def HR_view(request):
     return render(request, 'hr.html')
 def Ksiegowa_view(request):
@@ -43,6 +43,8 @@ def Ksiegowa_view(request):
 def Pracownik_view(request):
     return render(request, 'pracownik_os.html')
 def Recepcja_view(request):
-    return render(request, 'recepsja_os1.html')
+    return render(request, 'recepcja_os1.html')
 def Zaopatrzenie_view(request):
-    return render(request, 'Zaopatrzenie.html')
+    return render(request, 'zaopatrzenie.html')
+def Harmonogram_sal_dyr_view(request):
+    return redirect(request,'harmonogram_sal.html')
